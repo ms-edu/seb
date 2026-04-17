@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.safeexam.browser.ui.home.HomeFragment"
+        android:label="Safe Exam Browser"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_addExam"
+            app:destination="@id/addExamFragment"/>
+        <action
+            android:id="@+id/action_home_to_qrScanner"
+            app:destination="@id/qrScannerFragment"/>
+    </fragment>
+
+    <!-- Add Exam -->
+    <fragment
+        android:id="@+id/addExamFragment"
+        android:name="com.safeexam.browser.ui.addexam.AddExamFragment"
+        android:label="Tambah Ujian"
+        tools:layout="@layout/fragment_add_exam">
+
+        <!-- Optional pre-filled URL from QR scanner -->
+        <argument
+            android:name="prefilledUrl"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+    <!-- QR Scanner -->
+    <fragment
+        android:id="@+id/qrScannerFragment"
+        android:name="com.safeexam.browser.ui.qrscanner.QrScannerFragment"
+        android:label="Scan QR"
+        tools:layout="@layout/fragment_qr_scanner">
+
+        <action
+            android:id="@+id/action_qrScanner_to_addExam"
+            app:destination="@id/addExamFragment"/>
+    </fragment>
+
+</navigation>

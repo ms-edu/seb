@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Safe Exam Browser</string>
+    <string name="exam_list_title">Daftar Ujian</string>
+    <string name="add_exam">Tambah Ujian</string>
+    <string name="scan_qr">Scan QR Ujian</string>
+    <string name="save">Simpan</string>
+    <string name="exam_name_hint">Nama Ujian</string>
+    <string name="exam_url_hint">URL Google Form</string>
+    <string name="violation_warning_title">Peringatan Pelanggaran</string>
+    <string name="exam_blocked_title">Ujian Diblokir</string>
+    <string name="device_admin_label">Safe Exam Device Admin</string>
+    <string name="device_admin_description">Diperlukan untuk mengaktifkan mode kiosk saat ujian berlangsung.</string>
+</resources>

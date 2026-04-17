@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Top-left corner -->
+    <item>
+        <rotate android:fromDegrees="0">
+            <shape android:shape="line">
+                <stroke android:width="4dp" android:color="#FFFFFF"/>
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Corner frame using border -->
+    <item android:top="0dp" android:left="0dp" android:right="210dp" android:bottom="210dp">
+        <shape>
+            <stroke android:width="4dp" android:color="#FFFFFF"/>
+            <corners android:topLeftRadius="8dp"/>
+            <solid android:color="@android:color/transparent"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="210dp" android:right="0dp" android:bottom="210dp">
+        <shape>
+            <stroke android:width="4dp" android:color="#FFFFFF"/>
+            <corners android:topRightRadius="8dp"/>
+            <solid android:color="@android:color/transparent"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:top="210dp" android:left="0dp" android:right="210dp" android:bottom="0dp">
+        <shape>
+            <stroke android:width="4dp" android:color="#FFFFFF"/>
+            <corners android:bottomLeftRadius="8dp"/>
+            <solid android:color="@android:color/transparent"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:top="210dp" android:left="210dp" android:right="0dp" android:bottom="0dp">
+        <shape>
+            <stroke android:width="4dp" android:color="#FFFFFF"/>
+            <corners android:bottomRightRadius="8dp"/>
+            <solid android:color="@android:color/transparent"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+</layer-list>
